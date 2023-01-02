@@ -1,0 +1,432 @@
+/* Momence Styles go here */
+
+:root {
+    --momenceColorBackground: #000000;
+    --momenceColorPrimary: 233, 255, 145;
+    --momenceColorBlack: 182, 182, 182;
+}
+
+#momence-plugin-host-schedule {
+  width: 100%;
+  font-family: var(--momence-font-family);
+  font-size: 16px;
+  background: var(--momence-background);
+  max-width: 857px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.momence-host_schedule-session_list-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.momence-host_schedule-session_list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.momence-host_schedule-session_list-image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.momence-host_schedule-session_list-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.momence-host_schedule-session_list-second-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background: white;
+}
+
+.momence-host_schedule-session_list-section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.momence-host_schedule-session_list-section-header img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-type {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--momence-color-primary);
+  margin-bottom: 5px;
+}
+
+.momence-host_schedule-session_list-item-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--momence-color-text);
+  margin-bottom: 5px;
+}
+
+.momence-host_schedule-session_list-item-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-info-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-info div {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-info div:first-of-type {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--momence-color-text);
+  margin-bottom: 5px;
+}
+
+.momence-host_schedule-session_list-item-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.momence-host_schedule-session_list-item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  border: 1px solid var(--momence-color-primary);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--momence-color-primary);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.momence-host_schedule-session_list-item-button:hover {
+  background: var(--momence-color-primary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-button.momence-host_schedule-session_list-item-button-secondary {
+  border: 1px solid var(--momence-color-text-light);
+  color: var(--momence-color-text-light);
+}
+
+.momence-host_schedule-session_list-item-button.momence-host_schedule-session_list-item-button-secondary:hover {
+  background: var(--momence-color-text-light);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-booked {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-booked:hover {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-booked.momence-host_schedule-session_list-item-button-secondary {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-booked.momence-host_schedule-session_list-item-button-secondary:hover {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-waitlist {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-waitlist:hover {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-waitlist.momence-host_schedule-session_list-item-button-secondary {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-waitlist.momence-host_schedule-session_list-item-button-secondary:hover {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-full {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-full:hover {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-full.momence-host_schedule-session_list-item-button-secondary {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-full.momence-host_schedule-session_list-item-button-secondary:hover {
+  background: var(--momence-color-secondary);
+  color: white;
+}
+
+.momence-host_schedule-session_list-item-info div:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-date {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 5px;
+}
+
+.momence-host_schedule-session_list-item-time {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--momence-color-primary);
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-location {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-location svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-location div {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-capacity {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-capacity svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-capacity div {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-price {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-price svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-price div {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-attendees {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-attendees svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-attendees div {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-book {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.momence-host_schedule-session_list-item-book svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-book div {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.momence-host_schedule-session_list-item-host {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-session_list-item-host svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-host div {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-host-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-host-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.momence-host_schedule-session_list-item-host-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.momence-host_schedule-session_list-item-book-cta {
+  display: flex;
+  align-items: center;
+  margin-top: 10
