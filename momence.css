@@ -425,8 +425,93 @@
   overflow: hidden;
   margin-top: 5px;
 }
-
 .momence-host_schedule-session_list-item-book-cta {
   display: flex;
   align-items: center;
-  margin-top: 10
+  margin-top: 10px;
+}
+
+.momence-host_schedule-session_list-item-book-cta-button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--momence-color-text);
+  background: var(--momence-color-primary);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.momence-host_schedule-session_list-item-book-cta-button:hover {
+  background: var(--momence-color-primary-dark);
+}
+
+.momence-host_schedule-session_list-item-book-cta-waitlist {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  margin-left: 10px;
+}
+
+.momence-host_schedule-session_list-item-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.momence-host_schedule-session_list-item-info-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.momence-host_schedule-session_list-item-info-text {
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--momence-color-text-light);
+}
+
+.momence-host_schedule-session_list-item-description {
+  font-size: 14px;
+  color: var(--momence-color-text);
+  margin-top: 10px;
+}
+
+.momence-host_schedule-session_list-item-description p {
+  margin: 0;
+}
+
+.momence-host_schedule-session_list-item-description p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.momence-host_schedule-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.momence-host_schedule-pagination-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--momence-color-text-light);
+  cursor: pointer;
+}
+
+.momence-host_schedule-pagination-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.momence-host_schedule-pagination-item.momence-host_schedule-pagination-item--active {
+  font-weight: 700;
+  color: var(--momence-color-text);
+}
+
+.momence-host_schedule-pagination-item:hover {
+  color: var(--momence-color-primary);
+}
